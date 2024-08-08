@@ -1,9 +1,10 @@
-Scriptname TravelingSalesman extends Actor  
+Scriptname TravelingSalesman extends ReferenceAlias
 
 GlobalVariable Property DrawCost Auto
 MiscObject Property Gold001 Auto
 
 LeveledItem[] lvlItms
+GlobalVariable[] Property lvlItmsThere Auto
 int Property COCO_Idx = 0 AutoReadOnly Hidden
 int Property DX_Idx = 1 AutoReadOnly Hidden
 int Property Ninirim_Idx = 2 AutoReadOnly Hidden
@@ -20,6 +21,9 @@ Event OnLoad()
   lvlItms[COCO_Idx] = GetForm("COCO AIO LVLI Distribution.esp", 0x85F)
   lvlItms[DX_Idx] = GetForm("DX AIO LVLI Distribution.esp", 0x900)
   lvlItms[Ninirim_Idx] = GetForm("Ninirim AIO LVLI Distribution.esp", 0x819)
+  lvlItmsThere[COCO_Idx].SetValue((lvlItms[COCO_Idx] != none) as float)
+  lvlItmsThere[DX_Idx].SetValue((lvlItms[DX_Idx] != none) as float)
+  lvlItmsThere[Ninirim_Idx].SetValue((lvlItms[Ninirim_Idx] != none) as float)
 EndEvent
 
 Function DrawDemo(ObjectReference akTargetContainer)

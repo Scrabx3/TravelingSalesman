@@ -1,0 +1,10 @@
+merchant-intro.mp3 - introduction, description
+come-back.mp3 - sale concluded
+patootie.mp3 - summons an outfit piece and gives it to player
+which-plane.mp3 - asks the player what mod they want the outfit piece from
+no-services.mp3 - player recognized as male
+ComeCloser.mp3 - Line before dialog entered
+NoSkin.mp3 - Line when transaction is canceled
+PayMeSeptims.mp3 - No specific price mentioned
+Plebian.mp3 - Attack line 1
+EndWell.mp3 - Attack line 2
