@@ -6,10 +6,11 @@ Scriptname TIF_TSalesman_02000019 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-TravelingSalesman ts = akSpeaker as TravelingSalesman
 ts.DrawArmor(ts.COCO_Idx, Game.GetPlayer())
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
+
+TravelingSalesman Property ts Auto
