@@ -30,7 +30,8 @@
             <Include>Textures</Include>
             <Include>Scripts</Include>
             <Include>Source</Include>
-            <Include>Sound</Include>
+            <Match Exclude="raw">*.fuz</Match>
+            <Include>SEQ</Include>
         </ZipFile>
     </ZipFiles>
 </PapyrusProject>
