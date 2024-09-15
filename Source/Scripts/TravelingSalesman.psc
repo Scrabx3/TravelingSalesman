@@ -18,9 +18,9 @@ EndFunction
 
 Event OnLoad()
   lvlItms = new LeveledItem[3]
-  lvlItms[COCO_Idx] = GetForm("COCO AIO LVLI Distribution.esp", 0x85F)
+  lvlItms[COCO_Idx] = GetForm("COCO AIO LVLI Distribution.esp", 0x819)
   lvlItms[DX_Idx] = GetForm("DX AIO LVLI Distribution.esp", 0x900)
-  lvlItms[Ninirim_Idx] = GetForm("Ninirim AIO LVLI Distribution.esp", 0x819)
+  lvlItms[Ninirim_Idx] = GetForm("Ninirim AIO LVLI Distribution.esp", 0x85F)
   lvlItmsThere[COCO_Idx].SetValue((lvlItms[COCO_Idx] != none) as float)
   lvlItmsThere[DX_Idx].SetValue((lvlItms[DX_Idx] != none) as float)
   lvlItmsThere[Ninirim_Idx].SetValue((lvlItms[Ninirim_Idx] != none) as float)
